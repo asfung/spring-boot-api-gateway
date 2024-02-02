@@ -1,7 +1,8 @@
 
-# api gateway ResourceLocator pada spring boot
-# TODO: masih awal serpis yang tersedia maka next service akan mengandung business logic nya
+## API GATEWAY
 
+sedikit config 
+```yaml
   application:
     spring:
     name: gateway-service
@@ -11,3 +12,4 @@
         - id: person-service
           predicates:
           uri: localhost:8081/api/v1/**
+```
